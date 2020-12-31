@@ -1035,7 +1035,7 @@ because it uses variables in its outer scope."
                                                  it))
                                         (--> (or path (org-get-outline-path))
                                              (append it (list heading))
-                                             (org-format-outline-path it)
+                                             (org-format-outline-path it 1000)
                                              (org-link-display-format it))))
                                 (tags (if tags
                                           (concat " " (helm-org-rifle-fontify-like-in-org-mode tags))
